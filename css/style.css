@@ -20,6 +20,18 @@ img{
   justify-content: center;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.textadjust {
+  font-size: .9em;
+}
+
+.moremargin {
+  margin-top: 1%;
+}
+
 
 /******************************************
 /* ADDITIONAL STYLES
