@@ -1,4 +1,4 @@
-document.querySelector('button').addEventListener('click', getFetch)
+document.querySelector('.buttonimportant').addEventListener('click', getFetch)
 
 function getFetch(){
   const name = document.querySelector('input').value
@@ -21,15 +21,21 @@ function getFetch(){
       });
 }
 
-fetch(`https://digimon-api.vercel.app/api/digimon/`)
+fetch('https://digimon-api.vercel.app/api/digimon/')
       .then(res => res.json()) // parse response as JSON
       .then(data => {
-        data.name.forEach(obj => {
+        data.forEach(obj => {
           const li = document.createElement('li')
           li.textContent = obj.name
           document.querySelector('ul').appendChild(li)
-      })
+        })
       })
       .catch(err => {
           console.log(`error ${err}`)
       });
+
+document.querySelector('.buttonlist').addEventListener('click', show)
+
+function show() {
+  document.querySelector(".listlistlist").classList.toggle('hidden');
+}

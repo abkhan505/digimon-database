@@ -41,6 +41,19 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
+
+.hidden {
+  display: none;
+}
+
+.buttonlisthidden {
+  display: none;
+}
+
+li {
+  list-style-type: none;
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
