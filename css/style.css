@@ -52,10 +52,13 @@ body {
 
 ul {
   list-style-type: none;
-  text-align: center;
 }
 
 center {
+  text-align: center;
+}
+
+.listlistlist {
   text-align: center;
 }
 /******************************************
@@ -64,26 +67,38 @@ center {
 
 @media screen and (max-width: 428px) and (orientation: portrait) {
   .within {
-    width: 100%;
+    width: 85%;
   }
 
   .textadjust {
     text-align: center;
+  }
+
+  li {
+    margin-right: 10%;
   }
 }
 
 @media screen and (max-width: 809px) {
   .within {
-    width: 100%;
+    width: 85%;
   }
 
   .textadjust {
     text-align: center;
+  }
+
+  li {
+    margin-right: 7%;
   }
 }
 
 @media screen and (min-width: 810px) and (orientation: portrait) {
   .within {
     width: 50%;
+  }
+
+  li {
+    margin-right: 8%;
   }
 }
